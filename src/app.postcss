@@ -1,0 +1,40 @@
+/* global styles across app */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+	::-moz-selection {
+		@apply bg-gray-200;
+	}
+	::selection {
+		@apply bg-gray-200;
+	}
+
+	*:focus,
+	button:focus {
+		@apply outline-none ring-2 ring-gray-300;
+	}
+
+	h1,
+	h2,
+	h3 {
+		@apply tracking-widest sm:text-xl md:text-2xl;
+	}
+
+	p {
+		@apply leading-relaxed text-base md:text-lg;
+	}
+
+	a {
+		@apply hover:underline font-medium;
+	}
+
+	body.dark {
+		@apply text-gray-300 bg-gray-900;
+	}
+}
+
+@layer components {
+}
