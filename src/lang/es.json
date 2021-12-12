@@ -6,13 +6,13 @@
 		"page1": "PAGE 1 NAME",
 		"page2": "PAGE 2 NAME"
 	},
-    "error": {
-        "The resource could not be found": "No se pudo encontrar el recurso",
-        "Go back to the homepage": "Volver a la página de inicio",
-        "Error": "Error"
-    },
-    "labels": {
-        "Menu": "Menú",
-        "Toggle Dark Mode": "Alternar modo oscuro"
-    }
+	"error": {
+		"The resource could not be found": "No se pudo encontrar el recurso",
+		"Go back to the homepage": "Volver a la página de inicio",
+		"Error": "Error"
+	},
+	"labels": {
+		"Menu": "Menú",
+		"Toggle Dark Mode": "Alternar modo oscuro"
+	}
 }
