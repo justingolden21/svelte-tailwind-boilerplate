@@ -7,6 +7,7 @@
 
 	import Nav from '../components/Nav.svelte';
 	import Icon from '../components/Icon.svelte';
+	import { settings } from '../components/settings.js';
 
 	let navOpen = false;
 	$: if ($navigating) navOpen = false;
@@ -15,14 +16,14 @@
 	// also check that browser exists so we can reference document
 	// toggle dark class based on setting
 	$: if ($session && browser)
-		$session.settings.darkMode
+		$settings.darkMode
 			? document.body.classList.add('dark')
 			: document.body.classList.remove('dark');
 
 	onMount(() => {
 		// auto detect user device preferences
-		if ($session.settings.darkMode === null) {
-			$session.settings.darkMode = !!window.matchMedia('(prefers-color-scheme: dark)').matches;
+		if ($settings.darkMode === null) {
+			$settings.darkMode = !!window.matchMedia('(prefers-color-scheme: dark)').matches;
 		}
 	});
 </script>
@@ -46,7 +47,7 @@
 			<button
 				class="float-right"
 				aria-label={$session.languageDictionary.labels['Toggle Dark Mode']}
-				on:click={() => ($session.settings.darkMode = !$session.settings.darkMode)}
+				on:click={() => ($settings.darkMode = !$settings.darkMode)}
 			>
 				<Icon name="moon" class="w-6 h-6" />
 			</button>

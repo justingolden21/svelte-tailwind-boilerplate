@@ -7,23 +7,14 @@ async function getLanguageDictionary(headers) {
 	}
 }
 
-const defaultSettings = {
-	// overridden in _layout onMount to user device's preference
-	darkMode: null
-};
-
 export async function handle({ request, resolve }) {
 	request.locals.languageDictionary = await getLanguageDictionary(request.headers);
-	request.locals.settings = JSON.parse(JSON.stringify(defaultSettings));
-	request.locals.defaultSettings = defaultSettings;
 
 	return await resolve(request);
 }
 
 export function getSession({ locals }) {
 	return {
-		languageDictionary: locals.languageDictionary,
-		settings: locals.settings,
-		defaultSettings: locals.defaultSettings
+		languageDictionary: locals.languageDictionary
 	};
 }
