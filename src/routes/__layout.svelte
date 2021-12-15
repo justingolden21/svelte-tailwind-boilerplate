@@ -17,8 +17,8 @@
 	// toggle dark class based on setting
 	$: if ($session && browser)
 		$settings.darkMode
-			? document.body.classList.add('dark')
-			: document.body.classList.remove('dark');
+			? document.body.parentNode.classList.add('dark')
+			: document.body.parentNode.classList.remove('dark');
 
 	onMount(() => {
 		// auto detect user device preferences
