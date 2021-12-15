@@ -2,6 +2,7 @@
 	"appName": "APP NAME",
 	"appShortName": "APP SHORT NAME",
 	"appDescription": "APP DESCRIPTION",
+	"appKeywords": ["KEYWORD1", "KEYWORD2"],
 	"pageNames": {
 		"page1": "PAGE 1 NAME",
 		"page2": "PAGE 2 NAME"
