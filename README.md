@@ -8,7 +8,7 @@ A svelte kit boilerplate using tailwind css with eslint / prettier / airbnb form
 
 `npm i`
 
-Replace APP NAME, APP DESCRIPTION, AUTHOR NAME, and KEYWORDs
+Replace APP NAME, APP SHORT NAME, APP DESCRIPTION, AUTHOR NAME, APP URL, and KEYWORDs
 
 Replace #FFFFFF with your app's primary color
 
