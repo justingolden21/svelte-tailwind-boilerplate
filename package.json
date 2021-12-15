@@ -10,13 +10,8 @@
 		"format": "prettier --ignore-path .gitignore --ignore-path .prettierignore --write --plugin-search-dir=. .",
 		"generate-assets": "pwa-asset-generator static/img/icons/icon.svg static/img/icons --favicon --mstile --icon-only --opaque true"
 	},
-	"keywords": [
-		"KEYWORD 1",
-		"KEYWORD 2",
-		"KEYWORD 3"
-	],
 	"author": "AUTHOR NAME",
-	"license": "MIT",
+	"private": "true",
 	"devDependencies": {
 		"@sveltejs/adapter-netlify": "^1.0.0-next.32",
 		"@sveltejs/kit": "^1.0.0-next.180",
